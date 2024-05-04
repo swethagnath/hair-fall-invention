@@ -1,0 +1,1379 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+:root{
+ --swiper-theme-color: yellow;
+ --blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #6c757d;
+--gray-dark: #343a40;
+--primary: #007bff;
+--secondary: #6c757d;
+--success: #28a745;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #dc3545;
+--light: #f8f9fa;
+--dark: #343a40;
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+--font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+--font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+.text-green {
+    color: #95b266 !important;
+}
+
+ul{
+    list-style: none;
+}
+
+*{
+    font-family: "Nunito Sans",sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--black);
+    color: #fff;
+}
+
+html{
+    font-size: 65.5%;
+}
+
+
+.logo{
+    font-size: 4rem;
+    font-weight: 900;
+    color: #fff;
+    margin-left: 2rem;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: .2rem 1.5rem;
+    z-index: 1000;
+    background: #B7D341;
+    padding: .6rem 3rem;
+}
+
+header .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .1rem 2rem;
+}
+
+header a {
+    color: var(--black);
+}
+
+header a:hover {
+    color:  var(--blue);
+}
+
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li{
+    margin: 0 1rem;
+}
+
+header nav ul li a{
+    font-size: 2rem;
+}
+
+header .fa-bars{
+    font-size: 3.5rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;
+}
+
+header .nav-toggle{
+    top: 50%;
+    opacity: 1;
+    display:flex;
+}
+
+.header-active{
+    background: #fff;
+    box-shadow: 0 0.1rem .3rem rgba(0,0,0,0.3);
+    padding: .5rem 1rem;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: var(--gray-dark) !important;
+    transition: background-color 200ms linear;
+  }
+  
+
+.content .navbar{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+
+.navbar .icons li{
+    margin: 0
+}
+
+.navbar .icons li svg{
+    width: 2.4rem !important;
+    height: 2.4rem !important;
+    color: #fff;
+}
+
+.navbar button{
+    text-decoration: none;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.hair-test-button{
+    border: none;
+    padding: .5rem 1rem;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight:700!important;
+    border-radius:.7rem;
+    letter-spacing: 0;
+    pointer-events: auto
+}
+
+.content-button-background{
+    background: #414042;
+    border-color: #414042;
+    color: #fff !important;
+    width: 28rem;
+    height: 5rem;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 2rem;
+}
+
+.content-button-background a{
+    color: #fff;
+}
+
+/* .content-button-background a:hover{
+    color: black;
+} */
+
+.content-button-background:hover{
+    color: black;
+    color: #000 !important;
+    background: var(--teal)!important;
+}
+
+.navbar button:hover{
+    text-decoration: none;
+    background: #414042;
+    border-color: #414042;
+    color: #fff;
+}
+
+.section{
+    padding:2rem 7%;
+}
+
+.home{
+    background: #B7D341;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 7rem;
+    padding-bottom: 0;
+    min-height:85vh;
+}
+
+.home .image{
+    flex: 1 1 60rem;
+}
+
+.home .image img{
+    width:69%;
+    height: 80%;
+}
+
+.home .content{
+    flex: 1 1 46rem;
+    min-height:  41rem;
+}
+
+.home .content h3{
+    color: green;
+    font-size: 4rem;
+}
+
+.home .content .title{
+    font-style:normal;
+    font-size: 35px;
+    line-height: 62px;
+    letter-spacing: 0em;
+    color: #303032;
+    font-weight: 800 !important;
+    font-family: "Fredoka" !important;
+}
+
+.banner-heading-2{
+    font-size: 45px;
+    color: #303032;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 700 !important;
+}
+
+.banner-horizontal-line{
+    width: 9rem;
+    height: .6rem;
+    color: #414042 !important;
+    background-color: #414042 !important;
+    border-radius: 2rem;
+}
+
+.banner-ref-heading{
+    font-size: 32px;
+    line-height: 56px;
+    letter-spacing: 0em;
+    margin-top: 30px;
+}
+
+/* shopify section */
+
+.shopify{
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom:10rem;
+}
+
+.shopify .google-reviews div .fa-google{
+   font-size: 5.5rem;
+}
+
+.google-reviews{
+    display:block;
+    padding:2rem;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+    gap: 2rem;
+    align-items: center;
+}
+
+.review{
+    font-size: 1.9rem;
+}
+
+.google-reviews .rating{
+    display: flex;
+    flex-direction: column;
+}
+
+.rating-details{
+    display: flex;
+    gap: .5rem;
+    font-size: 1.7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-details p {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: #303032;
+}
+
+.fa-check{
+    font-size: 2rem;
+    gap: .5rem;
+}
+
+.fa-star{
+    color: gold;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 8));
+    }
+}
+
+
+.logos{
+    overflow: hidden;
+    background: white;
+    width:auto;
+    position: relative;
+    margin:auto;
+}
+
+.logos:hover .slide{
+    animation-play-state: paused;
+}
+
+.slide{
+    display: flex;
+    animation: scroll 10s  linear infinite;
+    width: calc(250px * 16)
+}
+
+.logo-slide{
+    width:150px;
+    margin-left:10rem;
+}
+.logo-slide img{
+    width: 100%;
+}
+
+.video-wrapper{
+    max-width:1200px;
+    margin: 0 auto;
+    overflow:hidden;
+    position: relative;
+}
+
+.video-wrapper .carousel{
+    font-size: 0px;
+    cursor:pointer; 
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging video{
+    pointer-events: none;
+}
+
+
+.video-wrapper .carousel video{
+    height: 360px;
+    object-fit: cover;
+    width: calc(100% / 5);
+    margin-left: 12px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-sizing: border-box
+}
+.video-wrapper .carousel video:first-child{
+    margin-left: 0px;
+}
+
+.video-wrapper svg {
+    position: relative;
+    transform: translateY(-50%);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align:center;
+    list-style: none;
+    line-height:46px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    z-index:1;
+}
+
+.video-wrapper svg:first-child {
+    left: 11px;
+    display: none;
+}
+
+.video-wrapper svg:last-child {
+    right: 11px;
+}
+
+section.hormons{
+    width:90%;
+    margin: 0 auto;
+    overflow:hidden;
+    position: relative;
+    text-align: center;
+    font-size: 6rem;
+}
+
+#hormons .p1{
+    margin-left: 9rem;
+}
+.three-fold-head{
+    font-size: 46px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: -.22px;
+    margin-bottom: 30px !important;
+    position: relative;
+    margin-top: 4rem;
+    font-family: "Nunito Sans",sans-serif !important;
+}
+
+.subheading {
+    font-size: 18px;
+    line-height: 1.61;
+    color: #414042;
+    padding: 24px 0 !important;
+    letter-spacing: 0;
+}
+
+.content-ways{
+    line-height: 1.03;
+    color: #414042;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+.description {
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: -0.24px;
+    color: #939598;
+    width:45%;
+    margin: 0 auto;
+}
+
+/* traya journey */
+.traya{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 4rem auto;
+}
+
+.traya div{
+    flex: 1 300px;
+    max-height: 25rem;
+}
+
+.journey-main h5{
+    letter-spacing: normal;
+    margin-bottom: 0 !important;
+    font-size: 16px;
+    color: rgba(65, 64, 66, 1);
+    opacity: 0.7;
+}
+
+.text-jurney h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.text-charcol{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.text-jurney a{
+    border-radius: .7rem !important;
+}
+
+.traya-title{
+    font-size: 44px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.25;
+    margin-top: 29px !important;
+}
+.traya-prep{
+    text-align: right;
+}
+.traya-min{
+    font-size: 1.7rem;
+}
+
+
+
+.swiper-slide {
+    background-size: cover;
+    background-position: 50%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.journey-main .fa-cart-shopping{
+    font-size: 5.2rem;
+    align-items: center;
+    /* height: auto; */
+    max-width: 100%;
+    border: 0;
+    color: antiquewhite;
+}
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.trayaSwiper{
+    width: 73%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.customer-Swiper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 87%;
+    height: 87%;
+    object-fit: cover;
+  }
+
+  .mySwiper{
+    width: 60%;
+    margin: 5rem auto;
+  }
+
+  
+  .mySwiper a{
+    margin-bottom: 7rem;;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+} 
+
+.swiper-pagination-bullet-active {
+    color: black;
+}
+
+.swiper-button-next,
+.swiper-button-prev{color: red;}
+
+
+.traya-sub-head{
+    font-size: 40px;
+    font-weight: 700 !important;
+    margin-top: 4rem;
+}
+
+.traya-description{
+    box-sizing: border-box;
+    color: rgb(124, 124, 124);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal
+}
+
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+.customers_review_content {
+    box-shadow: 1px 2px 4px 2px #0000001A;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #B7D340 !important;
+    text-align: justify;
+}
+
+.customers_review_content slick-slide{
+    width:40rem;
+}
+
+.mySwiper-2{
+    width:100%;
+}
+
+.img-txt{
+    height: 120px;
+    width: 120px;
+}
+
+.img-txt p {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}   
+
+.custr_images{
+    display: flex;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 120px;
+    width: cal(100%/3);
+}
+
+.name_and_verified{
+    margin-top: 3rem !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.custr_content .rating-numb{
+    margin-left: 1rem !important;
+}
+
+.reviewed_on {
+    box-sizing: border-box;
+    color: rgb(65, 64, 66);
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.review_details{
+    -webkit-line-clamp: 3;
+    height: 78px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+  
+
+/* solution section */
+
+.solution{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.solution .diff-test-list, h1{
+    font-size:44px;
+    font-weight: 700;
+}
+
+.solution .animate {
+    height: auto;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    position: relative;
+}
+
+.doctors-plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doctor_bottom_text{
+    font-weight: 700;
+    font-size: 24px;
+}
+
+caption {
+    font-size: 1rem;
+    letter-spacing: 0.07rem;
+    line-height: calc(1 + 0.7 / var(--font-body-scale));
+    margin-top: 12rem;
+    margin-right: 10rem;
+}
+
+.doctors-plan{
+    margin-left: -16rem;
+}
+
+.doctors-plan .caption h5{
+    margin-top: 4rem;
+    color: rgb(149, 178, 102);
+    font-family: fredoka_oneregular;
+    font-size: 2rem;
+    text-align: left;
+    margin-right:4rem;
+    font-weight: 800;
+    margin-bottom: 7rem;
+}
+.doctors-plan .caption h5:nth-child(1){
+    margin-left: 9rem;
+    margin-top: 30rem;
+}
+
+.doctors-plan .caption h5:nth-child(2){
+    margin-left: 14rem;
+}
+
+.doctors-plan .caption h5:nth-child(3){
+    margin-left: 20rem;
+}
+
+.doctor_bottom_text{
+    text-align: right;
+    margin-right: 5rem;
+}
+
+.customer{
+    text-align: center;
+    width: 81%;
+    margin: 0 auto;
+}
+
+.our-customer{
+    font-size: 4rem;
+    color: black;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.our-customer a{
+    color: black;
+}
+
+.scientific{
+    width: 80%;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.safe-scientist img{
+    width: 56%;
+    object-fit: cover;
+    height: 77vh;
+    border-radius: 2rem;
+}
+.safe-scientist p{
+    font-size: 4rem;
+    margin: 3rem 0 2rem 0;
+    font-weight: bold;
+    color: #414042;
+}
+
+.custr_images-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.custr_images-2 img{
+    height: 33rem;
+    width: 100%;
+}
+
+.customer-swiper, .gallery-essential{
+    display: flex;
+    gap: 2rem;
+}
+
+.customer-swiper  button, .gallery-essential button{
+    background: transparent;
+    font-size: 2rem;
+}
+
+.customer-swiper .button-next{
+    order:3;
+}
+
+.reviewed_on-2{
+    color: #272728 !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    margin-top: 4rem 0 4rem 0!important;
+}
+
+.product-metafields p{
+    height: 40px;
+    margin-bottom: 19.44444px;
+    font-size: 14px
+}
+
+.review_details-2{
+    font-weight: 300;
+    padding:1rem;
+    font-size: 1.3rem;
+}
+
+.show_less_more-2{
+    padding: .8rem;
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #414042;
+    border-color: #414042;
+    font-weight: 800;
+    font-size: 19px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    min-height: auto;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.money{
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: normal;
+    font-weight: 800;
+}
+
+.essential-head{
+    font-size: 4rem;
+    padding: 4rem;
+    font-weight: 800;
+}
+
+.btn-essential{
+    font-weight: 800;
+    padding: 15px 27px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    min-height: auto;
+    min-width: auto;
+    background-color: #414042;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.collection__view-all{
+    margin: 4rem 3rem;
+}
+.essential-banner{
+    width:95%;
+    height:75vh;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.footer{
+    width: 100%;
+    background: #656565;
+    padding: 30px 0 30px 20px;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.footer-links{
+    color: #fff !important; 
+    font-size:1.4rem;
+}
+
+.footer-links li{
+    margin-top: 1rem;
+}
+
+.footer-links li a{
+    color: #fff;
+}
+
+.googleappple-icon a img{
+    vertical-align: middle;
+    max-width: 152px;
+}
+
+.fsocial-icon{
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.footer_top_copy{
+    color: #fff;
+}
+
+.footer-info{
+    margin-right: -23rem;
+}
+
+.footer_security_badge{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 39rem; */
+    padding: 5rem 3rem;
+}
+
+.footer_security_badge li{
+    flex:1;
+    display: flex;
+    gap: .9rem;
+}
+
+.footer_security_badge li p{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_security_badge li p span{
+    width: 100%;
+    display: block;
+    color: #656465;
+    font-weight: 600;
+    font-size: 16px;
+}
+.gallery-essential{
+    display: flex;
+}
+
+.essential-header{
+    width:90%;
+}
+.gallery-essential .button-next{
+    order:3;
+}
+
+.hairTreatmentVideo{
+    width: 69%;  
+    margin: 0 auto;
+}
+
+.hairTreatmentVideo video{
+    width: 100% !important;
+    margin-left: 1rem;
+}
+
+  
+@media screen and (max-width: 1192px){
+    .custr_images-2 img {
+        height: 20rem !important;
+      }
+    .home .content{
+        margin-top: 10rem
+    }
+    .doctors-plan-2 img{
+        width: 26rem !important;
+        height: 47rem !important;
+    }
+    .doctor_bottom_text {
+        font-weight: 700;
+        font-size: 19px;
+    }
+    .customers_review_content {
+        width: 200px !important;
+    }
+    .customer .customer-swiper{
+        width: 73% !important;
+        margin: 4rem;
+    }
+    .custr_images-2 img{object-fit: unset};
+}
+
+@media screen and (max-width: 950px){
+   
+    #hormons .section-title {
+        font-size: 40px;
+      }
+    .carousel video{
+        width: calc(100% / 2)
+    }
+    .doctors-plan{
+        width:80%;
+        margin:0 auto;
+    }
+    .doctors-plan-2 .caption h5{
+        font-size: 12px;
+    }
+    .doctors-plan{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .doctors-plan h4{
+        flex:1 300px;
+    }
+    .doctors-plan .doctors-plan-2{
+        flex:1 270px;
+    }
+    /* .customers_review_content {
+        width: 200px !important;
+    } */
+    .customer {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .customer-Swiper .customers_review_content{
+        width: 90% !important;
+        margin-right:2rem;
+    }
+      .safe-scientist img {
+        width:100% !important;
+      }
+      .solution .diff-test-list, h1 {
+        font-size: 30px !important;
+        font-weight: 700;
+      }
+      .solution h4{
+        width: 78%;
+      }
+      .doctor_bottom_text {
+        margin-right: 0;
+      }
+      /* .doctor_bottom_text {
+        margin-right: -15rem;
+      } */
+      .traya {
+        margin: 1rem !important;
+        width:94%;
+      }
+      .essential-header .customers_review_content {
+        width: 100% !important;
+      }
+      .shopify {
+        width: 108%;
+      }
+      .hairTreatmentVideo video{
+        width: 75% !important;
+        margin-left: 1rem;
+    }
+      
+}
+
+
+@media screen and (max-width: 650px){
+
+    .gallery-essential{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .navbar button{
+        display: none;
+    }
+    
+    .custr_images-2 img {
+        height: 20rem !important;
+      }
+      .customer-Swiper .customers_review_content{
+        width: 100% !important;;
+    }
+    .home .content{
+        margin-top: 10rem
+    }
+    #hormons .description {
+        font-size: 16px;
+    }
+    .traya {
+        margin: 0 auto;
+        width:100%;
+      }
+    .traya div {
+        flex: 1;
+    }
+    .traya .text-jurney{
+        
+        flex: 1 auto;
+    }
+    .traya .text-jurney  a{
+        width:94%;
+        margin: 0 1rem 0 2rem;
+    }
+
+    .carousel video{
+        width: calc(100% / 2)
+    }
+    .inner-side-steps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .trayaSwiper swiper-slide a{
+        width: 79% !important;
+    }
+    .doctors-plan{
+        flex-direction: column;
+    }
+    .doctors-plan-2{
+        width: 300px;
+        
+    }
+    .doctors-plan h4{
+        order: 2;
+    }
+    .doctors-plan .caption{
+        margin-left: 30px;
+    }
+    .doctors-plan .caption h5:nth-child(1) {
+        margin-left: 3rem;
+        margin-top: 2rem;
+        font-size: 12px;
+      }
+    .doctors-plan .caption h5:nth-child(2) {
+        margin-left: 5rem;
+        font-size: 12px;
+      }
+      .doctors-plan .caption h5:nth-child(3) {
+        margin-left: 8rem;
+        font-size: 12px;
+      }
+      .doctor_bottom_text {
+        margin-right: -15rem;
+      }
+      .essential-banner {
+        margin: 0 !important;
+      }
+      .solution{
+        margin:2rem 0 0 2rem;
+        text-align: center;
+        width: 88%;
+      }
+      .doctor_bottom_text {
+        margin-right: 3rem;
+      }
+      /* .customers_review_content {
+        width: 250px !important;
+      } */
+      .essential-header .customers_review_content {
+        width: 100% !important;
+      }
+      .shopify {
+        width: 108%;
+      }
+}
+
+
+@media screen and (max-width: 550px){
+    html{
+        font-size: 55%;
+        font-weight: 500;
+    }
+    .customer-Swiper .customers_review_content{
+        width: 100% !important;;
+    }
+    .doctors-plan-2{
+        margin-left: -19rem !important;
+    }
+    header{
+        padding: 0;
+    }
+    .home{
+        padding-left: 4rem;
+    }
+    .home .content .title {
+        font-size: 18px;
+    }
+    
+    .banner-heading-2{
+        font-size: 21px;
+    }
+    .home .content{
+        margin-top: 8rem;
+    }
+    .banner-ref-heading {
+        font-size: 18px;
+        margin-top:0;
+    }
+    .shopify{
+        width:100%;
+    }
+    .google-reviews {
+        margin-bottom:0;
+        gap:2rem;
+    }
+
+    #hormons .section-title{
+        font-size: 33px;
+    }
+    #hormons .content-button-background,  .hair-test-button{
+        font-size: 1.4rem;
+        padding:0;
+        width:20rem;
+    }
+    .carousel video{
+        width: 100%;
+    }
+    p{
+        margin:0
+    }
+    .three-fold-head{
+        font-size:30px;
+        font-weight:700;
+    }
+    #hormons .subheading, .content-ways{
+        font-size: 12px;
+    }
+    .description{
+        font-size: 16px;
+        width:100%;
+    }
+    .traya div {
+        flex: 1 auto;
+    }
+    .traya{
+        width:96%;
+    }
+    .traya .text-jurney{
+        flex-direction: column;
+    }
+    .traya .text-jurney  a{
+        width:95%;
+    }
+    .traya-title {
+        font-size: 30px;
+    }
+    #homepage .journey-main{
+        display: flex;
+    }
+    #homepage .journey-main svg{
+        margin-bottom:.5rem;
+    }
+    .traya-sub-head{
+        font-size: 30px;
+    }
+    .traya-description{
+        font-size: 16px;
+        line-height: 20px;
+        margin-left:4rem;
+    }
+    .traya-section-p .section-title, .essential-head{
+        font-size: 30px;
+    }
+    .trayaSwiper{
+        width: 97%;
+        height: 100%;
+        margin-left: 5rem;
+      }
+    .swiper-slide-active
+    .mySwiper {
+        width: 83%;
+    }
+    #solution h1, .solution .diff-test-list{
+        font-size: 30px;
+    }
+      #solution h1{
+        width: auto;
+        text-align: center;
+      }
+      .doctor_bottom_text{
+        font-weight: 400;
+        font-size: 20px;
+        margin-right: 0;
+      }
+      .doctors-plan{
+        margin-bottom: -24rem;
+      }
+      .doctors-plan-2{
+        margin-left: -2rem;
+      }
+      .hair-test-button{
+        margin-top: 2rem;
+      }
+      .customer{
+        width: 100%;
+      }
+      .safe-scientist img{
+        padding: 2rem;
+        height: 80vh;
+        border-radius: 30px;
+      }
+      .safe-scientist p{
+        margin:0;
+      }
+      .essential-head{
+        padding: 0;
+        font-weight: 700 !important;
+      }
+      .essential-banner{
+        width: 92%;
+        margin: 0 0 2rem 0;
+      }
+      .footer_security_badge {
+        gap:0;
+        padding:1rem 0;
+        justify-content: center;
+      }
+      ul.footer_security_badge li p span {
+        font-size: 12px;
+      }
+      .footer_security_badge li svg{
+        width: 4rem;
+        height: 5rem;
+      }
+      .customer-Swiper swiper-container{
+        width: 100%;
+        height: 100%;
+      }
+      .customer-swiper{
+        margin: 0 1rem;
+      }
+      .essential-header .customers_review_content {
+        width: 100% !important;
+      }
+      .footer_security_badge {
+        margin: 2rem;
+      }
+}
